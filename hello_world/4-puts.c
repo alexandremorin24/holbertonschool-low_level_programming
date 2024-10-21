@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-/*
-* Fonction main : affiche du texte
-* Arguments : il n'y en a pas
-* Valeur de retour : 0
-*/
+/**
+ * main - Entry point of the program
+ *
+ * Description: Prints the text "Programming is like building
+ * a multilingual puzzle" to the standard output.
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
