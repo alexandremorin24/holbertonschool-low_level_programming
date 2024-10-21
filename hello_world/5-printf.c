@@ -3,7 +3,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints the text "with proper grammar, but the outcome is a piece of art,"
+ * Description: Prints the text "with proper grammar,
+ * but the outcome is a piece of art,"
  *
  * Return: Always 0 (Success)
  */
