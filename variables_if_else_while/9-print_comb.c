@@ -14,8 +14,14 @@ int numberz = '0';
 for (numberz = '0'; numberz <= '9'; numberz++)
 {
 	putchar(numberz);
-	putchar(',');
-	putchar(' ');
+		if (numberz == '9')
+		{
+		break;
+		} else
+		{
+		putchar(',');
+		putchar(' ');
+		}
 }
 	putchar('\n');
 
