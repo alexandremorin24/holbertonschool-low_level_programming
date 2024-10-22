@@ -17,7 +17,8 @@ for (numberz = '0'; numberz <= '9'; numberz++)
 		if (numberz == '9')
 		{
 		break;
-		} else
+		}
+		else
 		{
 		putchar(',');
 		putchar(' ');
