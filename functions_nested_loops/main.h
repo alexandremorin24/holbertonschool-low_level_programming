@@ -1,6 +1,6 @@
-#ifndef MAIN_H  // Eviter inclusion multiple
+#ifndef MAIN
 #define MAIN_H
 
-int _putchar(char c);  // Prototype de _putchar
+int _putchar(char c);
 
 #endif
