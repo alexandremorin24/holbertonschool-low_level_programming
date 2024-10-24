@@ -2,29 +2,28 @@
 
 /**
  * print_to_98 - prints all natural numbers from n to 98
+ *@n: The starting number
  *
- *@n: starting number
- *
- * Return: result
- */
+ * Return: void
+*/
 void print_to_98(int n)
 {
-	int number;
+		int number;
 
-	if (n < 98)
-	{
-		for (number = n; number <= 98; number++)
+		if (n < 98)
 		{
-			printf("%d", number);
-
-			if (number != 98)
+			for (number = n; number <= 98; number++)
 			{
-				printf(", ");
-			}	
+				printf("%d", number);
+
+				if (number != 98)
+				{
+					printf(", ");
+				}
+			}
 		}
-	}
-	else
-	{
+		else
+		{
 		for (number = n; number >= 98; number--)
 		{
 			printf("%d", number);
