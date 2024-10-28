@@ -3,7 +3,7 @@
 /**
  * print_square - prints a square of n blocs
  *
- * @n: number of blocs
+ * @size: number of blocs
  *
  * Return: Void
  */
