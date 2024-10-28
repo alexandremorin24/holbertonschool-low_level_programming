@@ -6,7 +6,7 @@
  *
  * Return: Void
  */
-void print_more_numbers(void)
+void print_most_numbers(void)
 {
 	int i = 0;
 
