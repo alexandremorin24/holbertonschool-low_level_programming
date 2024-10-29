@@ -3,7 +3,7 @@
 /**
  *  _puts - prints a string, followed by a new line, to stdout
  *
- * @s: string to mesure
+ * @str: the string to print
  *
  * Return: lenght of the string
  */
