@@ -11,7 +11,8 @@
 
 int _atoi(char *s)
 {
-	int count = 0, sign = 1, result = 0;
+	int count = 0, sign = 1;
+	double result = 0;
 
 	for (count = 0; *(s + count) != '\0'; count++)
 	{
