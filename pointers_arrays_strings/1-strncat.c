@@ -2,14 +2,12 @@
 #include <string.h>
 
 /**
- * _strcat - appends the src string to the dest string, overwriting the
- * terminating null byte (\0) at the end of dest
- * and then adds a terminating null byte
+ * _strncat - concatenates two strings using at most n bytes from src
+ * @dest: destination string to which src will be appended
+ * @src: source string to append
+ * @n: maximum number of bytes to use from src
  *
- * @src: string to append
- * @dest: destination of append
- *
- * Return: pointer to *dest
+ * Return: pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
