@@ -14,9 +14,16 @@ void print_array(int *a, int n)
 {
 	int count;
 
-	for (count = 0; *(a + count) != *(a + n); count++)
+	for (count = 0; count < n; count++)
 	{
-		_putchar(*a + count);
+		if (count < (n - 1))
+		{
+			printf("%i, ", *(a + count));
+		}
+		else
+		{
+			printf("%i", *(a + count));
+		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
