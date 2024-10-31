@@ -11,7 +11,6 @@
 char *cap_string(char *str)
 {
 	int count = 0;
-	char separator[] = " \t\n,;.!?\"(){}";
 
 	if ((str[count] >= 'a') && (str[count] <= 'z'))
 	{
@@ -20,7 +19,13 @@ char *cap_string(char *str)
 
 	for (; str[count] != '\0' ; count++)
 	{
-		if (strchr(separator, str[count]) != NULL)
+		if (str[count] == '\n' || str[count] == '\t' ||
+			str[count] == ' ' || str[count] == ',' ||
+			str[count] == ';' || str[count] == '.' ||
+			str[count] == '!' || str[count] == '?' ||
+			str[count] == '"' || str[count] == '(' ||
+			str[count] == ')' || str[count] == '{' ||
+			str[count] == '}')
 		{
 			if ((str[count + 1] >= 'a') && (str[count + 1] <= 'z'))
 			{
