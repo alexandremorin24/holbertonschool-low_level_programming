@@ -20,8 +20,8 @@ int _strcmp(char *s1, char *s2)
 		}
 	}
 
-	if (s1[length] == '\0' && s2[length] != '\0' ||
-			s1[length] != '\0' && s2[length] == '\0')
+	if ((s1[length] == '\0' && s2[length] != '\0') ||
+			(s1[length] != '\0' && s2[length] == '\0'))
 	{
 		return (s1[length] - s2[length]);
 	}
