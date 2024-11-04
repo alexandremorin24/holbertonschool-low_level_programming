@@ -8,9 +8,10 @@
  *
  * Description: This function locates the first occurrence in the string `s`
  * of any of the bytes in the string `accept`. It returns a pointer to the byte
- * in `s` that matches one of the bytes in `accept`, or NULL if no such byte is found.
+ * in `s` that matches one of the bytes in `accept`
+ * or NULL if no such byte is found.
  *
- * Return: pointer to the byte in `s` that matches one of the bytes in `accept`,
+ * Return: pointer to the byte in `s` that matches one of the bytes in `accept`
  * or NULL if no such byte is found.
  */
 
@@ -28,5 +29,5 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	return(NULL);
+	return (NULL);
 }

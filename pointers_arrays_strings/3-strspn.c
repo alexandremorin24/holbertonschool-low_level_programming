@@ -29,7 +29,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 
-	if (accept[countAccept] == '\0')
+		if (accept[countAccept] == '\0')
 		{
 			break;
 		}
