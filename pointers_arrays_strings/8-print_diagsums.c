@@ -13,12 +13,12 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i = 0, j = size, result = 0, resultr = 0;
+	int i = 0, result = 0, resultr = 0;
 
 	for (i = 0; i < size; i++)
 	{
 		result += a[i * (size + 1)];
 		resultr += a[i * size + (size - 1 - i)];
 	}
-	printf ("%i, %i", result, resultr);
+	printf ("%i, %i\n", result, resultr);
 }
