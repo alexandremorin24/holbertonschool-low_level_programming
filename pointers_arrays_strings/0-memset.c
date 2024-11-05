@@ -18,10 +18,15 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int count = 0;
 
+	if (n <= 0)
+	{
+		return (s);
+	}
+
 	for (count = 0; count < n; count++)
 	{
 		s[count] = b;
 	}
 
-	return ("&s");
+	return (s);
 }
