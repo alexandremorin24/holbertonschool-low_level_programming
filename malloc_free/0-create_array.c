@@ -8,7 +8,7 @@
  * @size: the number of chars in the array
  * @c: char to initialize
  *
- * Description: This program creates an array of a given size and 
+ * Description: This program creates an array of a given size and
  * initializes it with a specific character.
  *
  * Return: a pointer to the array, or NULL if it fails or if the size is zero
