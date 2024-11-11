@@ -16,18 +16,18 @@
 
 char *create_array(unsigned int size, char c)
 {
-    char *tableau = malloc(size * sizeof(char));
-    unsigned int i = 0;
+	char *tableau = malloc(size * sizeof(char));
+	unsigned int i = 0;
 
-    if (tableau == NULL || size == 0)
-    {
-        return (NULL);
-    }
+	if (tableau == NULL || size == 0)
+	{
+		return (NULL);
+	}
 
-    for (; i < size; i++)
-    {
-        tableau[i] = c;
-    }
+	for (; i < size; i++)
+	{
+		tableau[i] = c;
+	}
 
-    return (tableau);
+	return (tableau);
 }
