@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -16,28 +15,25 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i = 0, j = 0;
+	unsigned int i = 0;
+	char *strcopy;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 
-	for (; str[i] != '\0'; i++)
-	{
-	}
+	/* Calculate the length of str */
+	while (str[i] != '\0')
+		i++;
 
-	char *strcopy = malloc(i * sizeof(char) + 1);
-
+	/* Allocate memory for the duplicate, including the null terminator */
+	strcopy = malloc(i + 1);
 	if (strcopy == NULL)
-	{
 		return (NULL);
-	}
 
-	for (; j <= i; j++)
-	{
-		strcopy[j] = str[j];
-	}
+	/* Copy the string */
+	for (i = 0; str[i] != '\0'; i++)
+		strcopy[i] = str[i];
+	strcopy[i] = '\0';
 
 	return (strcopy);
 }
