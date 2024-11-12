@@ -11,7 +11,7 @@ fichier_source="$1"
 nom_sortie="${fichier_source%.*}"
 
 # Compile le fichier avec les options spécifiées
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c "$fichier_source" -o "$nom_sortie"
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.h main.c "$fichier_source" -o "$nom_sortie"
 
 # Vérifie si la compilation a réussi
 if [ $? -eq 0 ]; then
