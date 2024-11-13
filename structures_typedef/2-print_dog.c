@@ -18,14 +18,14 @@ void print_dog(struct dog *d)
 		return;
 
 	d->name
-	    ? printf("Name : %s\n", d->name)
-	    : printf("Name : (nil)\n");
+	    ? printf("Name: %s\n", d->name)
+	    : printf("Name: (nil)\n");
 
 	d->age
-	    ? printf("Age : %f\n", d->age)
-	    : printf("Age : (nil)\n");
+	    ? printf("Age: %f\n", d->age)
+	    : printf("Age: (nil)\n");
 
 	d->owner
-	    ? printf("Owner : %s\n", d->owner)
-	    : printf("Owner : (nil)\n");
+	    ? printf("Owner: %s\n", d->owner)
+	    : printf("Owner: (nil)\n");
 }
