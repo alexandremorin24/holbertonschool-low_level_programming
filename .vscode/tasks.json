@@ -1,17 +1,40 @@
 {
 	"version": "2.0.0",
 	"tasks": [
-	    {
-		"label": "Betty Style",
-		"type": "shell",
-		"command": "betty-style",
-		"args": ["${file}"],
-		"group": {
-		    "kind": "test",
-		    "isDefault": true
+		{
+			"label": "Format with AStyle and Validate with Betty",
+			"type": "shell",
+			"command": "~/.local/bin/betty_astyle.sh", // Chemin vers ton script personnalisé
+			"args": [
+				"${file}" // Formatte et valide le fichier actuel
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always", // Affiche toujours la sortie dans le terminal
+				"panel": "shared" // Utilise le panneau partagé pour afficher les logs
+			},
+			"problemMatcher": []
 		},
-		"problemMatcher": []
-	    }
+		{
+			"label": "Format with AStyle Only",
+			"type": "shell",
+			"command": "astyle", // Commande AStyle
+			"args": [
+				"--options=$HOME/.astylerc", // Spécifie le fichier de configuration AStyle
+				"${file}" // Formatte uniquement le fichier en cours
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		}
 	]
-    }
-    
+}
