@@ -85,13 +85,17 @@ void print_all(const char * const format, ...)
 
 	while (format && format[i])
 	{
-		for (j = 0; printers[j].type; j++)
+		j = 0;
+
+		while (printers[j].type != '\0')
 		{
 			if (printers[j].type == format[i])
 			{
 				printers[j].func(args, separator);
 				separator = ", ";
+				break;
 			}
+			j++;
 		}
 		i++;
 	}
