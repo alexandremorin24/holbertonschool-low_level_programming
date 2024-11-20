@@ -1,0 +1,10 @@
+# Ignorer tous les fichiers par défaut
+*
+
+# Ne pas ignorer les fichiers .c et .h
+!*.c
+!*.h
+!README.md
+
+# Ne pas ignorer le fichier .gitignore lui-même
+!.gitignore
