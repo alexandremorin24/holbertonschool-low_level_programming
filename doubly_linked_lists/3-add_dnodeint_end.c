@@ -14,7 +14,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	dlistint_t *locator = *head;
 
 	if (head == NULL)
-    		return (NULL);
+		return (NULL);
 
 	if (newNode == NULL)
 		return (NULL);
